@@ -1,0 +1,275 @@
+#walletButton .dropdown { display: none; }
+
+body {
+	font-family: roboto-regular;
+	background-color: #F0F2F5 !important;
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: #FFF;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #E8E8E8;
+}
+
+.navbar {
+	height: 56px;
+	background-color: #FFF;
+	z-index: 4;
+}
+
+.breadcrumb-nav {
+	width: 100%;
+	height: 35px;
+}
+
+.quick-bar {
+	position: absolute;
+	top: 8px;
+	right: 40px;
+}
+
+.menu {
+	top: 0px;
+	z-index: 5;
+	left: -280px;
+	height: 100%;
+	width: 280px;
+	position: fixed;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color: #FFF;
+	box-shadow: -2px 0px 14px -1px rgba(0,0,0,0.15);
+
+}
+
+.menu::-webkit-scrollbar {
+    width: 5px;
+}
+
+.menu::-webkit-scrollbar-track {
+	background-color: #FFF;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #E8E8E8;
+}
+
+.group-title {
+	width: 100%; 
+	color: #E8E8E8;
+	font-size: 14px;
+	padding-top: 18px;
+	text-align: center; 
+	line-height: 0.1em;
+	margin: 10px 0 20px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #E8E8E8; 
+}
+
+.title-content {
+    background:#fff; 
+    padding: 0 10px; 
+}
+
+.menu-item {
+	color: #222;
+	width: 268px;
+	display: block;
+	font-size: 15px;
+	border-radius: 8px;
+	margin-left: 4px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #FFF;
+}
+
+.menu-item:hover {
+	color: #222;
+	text-decoration: none;
+	background: #F4F4F4 radial-gradient(circle, transparent 1%, #F4F4F4 1%) center/15000%;
+}
+
+.active {
+	background: #F4F4F4 radial-gradient(circle, transparent 1%, #F4F4F4 1%) center/15000%;
+}
+
+.item-icon {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+}
+
+.item-title {
+	width: 79%;
+}
+
+.ripple {
+	background-position: center;
+	transition: background 0.8s;
+}
+
+.ripple:hover {
+	background: #F9F9F9 radial-gradient(circle, transparent 1%, #F9F9F9 1%) center/15000%;
+}
+
+.ripple:active {
+	background-color: #D9D9D9;
+	background-size: 100%;
+	transition: background 0s;
+}
+
+.toggle-button {
+	border: none;
+	border-radius: 50px;
+	padding: 8px 14px;
+	font-size: 16px;
+	cursor: pointer;
+	color: #222;
+	background-color: #FFF;
+	outline: none;
+}
+
+.toggle-button:focus {
+	outline: none;
+}
+
+.button-wrapper {
+	display: inline-block;
+}
+
+.button-wrapper .dropdown {
+	position: absolute;
+	top: 60px;
+	left: -110px;
+	background-color: white;
+	font-size: 15px;
+	width: 200px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.5); 
+	box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.5);
+}
+
+.dropdown .link {
+	display: block;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 190px;
+}
+
+.text-link {
+	opacity: 1;
+	color: #222;
+	font-size: 20px;
+	transition: 0.3s;
+	margin-left: 10px;
+	font-weight: 500;
+}
+
+.text-link:hover {
+	opacity: 0.5;
+	color: #222;
+	text-decoration: none;
+}
+
+.logout-link {
+	font-size: 16px;
+}
+
+.panel-right::-webkit-scrollbar {
+    width: 5px;
+}
+
+.panel-right::-webkit-scrollbar-track {
+	background-color: #FFF;
+}
+
+.panel-right::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #D7D7D7;
+}
+
+.panel-right {
+	top: 0px;
+	z-index: 5;
+	right: -290px;
+	height: 100%;
+	width: 280px;
+	position: fixed;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: #FFF;
+	box-shadow: -2px 0px 14px -1px rgba(0,0,0,0.15);
+}
+
+.content-header {
+	width: 100%;
+	position: sticky;
+	padding-bottom: 10px;
+	background-color: white;
+}
+
+.content-details {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+.onoffswitch {
+    position: relative; width: 40px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 10px; padding: 0; line-height: 20px;
+    border: 0px solid #FFFFFF; border-radius: 30px;
+    background-color: #9E9E9E;
+}
+
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 20px; margin: -5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 31px;
+    border-radius: 50px;
+    box-shadow: 0 6px 12px 0px #757575;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #42A5F5;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #42A5F5;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+   margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+    background-color: #2196F3; 
+    box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
+}

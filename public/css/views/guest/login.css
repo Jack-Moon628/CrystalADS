@@ -1,0 +1,128 @@
+body {
+	overflow-x: hidden;
+}
+
+.tip {
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 14px;
+	cursor: pointer;
+	color: hsla(219, 10%, 70%, 0.7);
+}
+
+.tip:hover {
+	text-decoration: none;
+	color: hsla(219, 10%, 10%, 0.7);
+}
+
+.wrapper-title {
+	font-size: 25px;
+	font-weight: 500;
+	text-align: left;
+	display: block;
+	color: hsla(230, 61%, 58%, 1);
+}
+
+.form-wrapper {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.form-wrapper form {
+	display: inline-block;
+	text-align: left;
+	padding: 25px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-radius: 5px;
+	margin-bottom: 80px;
+
+	-webkit-box-shadow: 0px 0px 59px -23px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 59px -23px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 59px -23px rgba(0,0,0,0.75);
+}
+
+.input-item {
+	margin-top: 30px;
+}
+
+.input-item span {
+	font-size: 15px;
+	font-weight: 200;
+	display: block;
+	color: hsla(226, 14%, 38%, 1);
+	margin-bottom: 10px;
+}
+
+.input-item input {
+	width: 400px;
+	padding: 8px;
+	border-radius: 5px;
+	border: solid 1px hsla(226, 14%, 38%, 0.25); 
+}
+
+.input-item input:focus {
+    outline: none !important;
+    border-color: hsla(230, 61%, 58%, 0.5);
+    box-shadow: 0 0 10px hsla(230, 61%, 58%, 0.5);
+}
+
+.validation {
+	margin-top: 5px;
+	font-size: 13px;
+	display: none;
+}
+
+.form-submit {
+	width: 400px;
+	height: 45px;
+	color: white;
+	outline: none;
+	border: none;
+	margin-top: 30px;
+	border-radius: 5px;
+	background-color: hsla(230, 61%, 58%, 1);
+}
+
+.form-submit:hover {
+	background-color: hsla(230, 61%, 58%, 0.8)
+}
+
+.hint {
+	font-size: 13px;
+	display: block;
+	margin-top: 10px;
+	width: 400px;
+	text-align: center;
+	color: hsla(219, 10%, 70%, 1);
+}
+
+.hint a {
+	color: hsla(219, 10%, 50%, 1);
+}
+
+.hint a:hover {
+	text-decoration: none;
+	color: hsla(219, 10%, 50%, 1);
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.form-wrapper {
+		margin-top: 50px;
+		/*text-align: center;*/
+	}
+
+	.form-wrapper form {
+		width: 80%;
+		margin: 0px;
+		padding: 0px;
+		box-shadow: none;
+		display: inline-block;
+	}
+}

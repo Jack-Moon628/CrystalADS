@@ -1,0 +1,23 @@
+.welcome-card {	
+	margin-top: 50px;
+	width: 90%;
+	height: 150px;
+	color: #222;
+	background: #E8E9ED;
+	background: -webkit-linear-gradient(to right, #E8E9ED, #F5F6FA);
+	background: linear-gradient(to right, #E8E9ED, #F5F6FA);
+}
+
+.welcome-title {
+	font-size: 25px;
+	font-weight: 250;
+	padding-top: 15px;
+	padding-left: 15px;
+	display: block;
+}
+
+.welcome-subtitle {
+	display: block;
+	padding-left: 15px;
+	color: #444;
+}

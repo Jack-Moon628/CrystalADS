@@ -1,0 +1,268 @@
+body {
+	overflow-x: hidden;
+}
+
+.left-pane {
+	position: fixed;
+	overflow: hidden;
+	top: 0px;	left: 0px;
+	width: 40%;
+	height: 100%;
+	z-index: 999;
+	background-color: hsla(204, 45%, 98%, 1);
+	border-right: solid 1px hsla(215, 27%, 91%, 1);
+}
+
+.right-pane {
+	width: 60%;
+	float: right;
+	text-align: center;
+}
+
+.tip {
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 14px;
+	cursor: pointer;
+	color: hsla(219, 10%, 70%, 0.7);
+}
+
+.tip:hover {
+	text-decoration: none;
+	color: hsla(219, 10%, 10%, 0.7);
+}
+
+.pane-footer .tip:nth-child(1) {
+	cursor: default;
+}
+
+.pane-footer .tip:nth-child(1):hover {
+	cursor: default;
+	color: hsla(219, 10%, 70%, 0.7);
+}
+
+.pane-footer .tip:nth-child(1)::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f141';
+    color: hsla(219, 10%, 70%, 0.7);
+    margin-left: 20px;
+}
+
+.feature-wrapper {
+	width: 100%;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.wrapper-title {
+	font-size: 25px;
+	font-weight: 500;
+	text-align: left;
+	display: block;
+	color: hsla(230, 61%, 58%, 1);
+}
+
+.feature-list {
+	width: 50%;
+	display: inline-block;
+	text-align: left;
+}
+
+.feature {
+	margin-top: 30px;
+}
+
+.title {
+	font-size: 15px;
+	margin-bottom: 5px;
+	color: hsla(229, 29%, 19%, 1);
+}
+
+.title:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f00c';
+    color: hsla(219, 10%, 70%, 0.7);
+    font-size: 10px;
+
+}
+
+.description {
+	font-size: 14px;
+	color: hsla(226, 14%, 38%, 1);
+}
+
+.wave-shape {
+	position: absolute;
+	z-index: 1;
+	bottom: 0px; left: 0px;
+}
+
+.pane-footer {
+	position: absolute;
+	bottom: 0px; left: 0px;
+	width: 100%;
+	z-index: 999;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.footer-content { 
+	display: inline-block;
+}
+
+.form-wrapper {
+	width: 100%;
+	text-align: center;
+	margin-top: 125px;
+}
+
+.form-wrapper form {
+	display: inline-block;
+	text-align: left;
+	margin-left: 0px;
+}
+
+.input-item {
+	margin-top: 30px;
+}
+
+.input-item span {
+	font-size: 15px;
+	font-weight: 200;
+	display: block;
+	color: hsla(226, 14%, 38%, 1);
+	margin-bottom: 10px;
+}
+
+.input-item input {
+	width: 400px;
+	padding: 8px;
+	border-radius: 5px;
+	border: solid 1px hsla(226, 14%, 38%, 0.25); 
+}
+
+.input-item input:focus {
+    outline: none !important;
+    border-color: hsla(230, 61%, 58%, 0.5);
+    box-shadow: 0 0 10px hsla(230, 61%, 58%, 0.5);
+}
+
+.input-tip {
+	position: relative;
+}
+
+.input-tip i{
+	font-size: 13px;
+	color: hsla(226, 14%, 38%, 0.5);
+}
+
+.input-tip span {
+	position: absolute;
+	word-wrap: all;
+	width: 400px;
+	top: -28px; left: 20px;
+	padding: 10px;
+	background-color: #444;
+	z-index: 999;
+	font-size: 13px;
+	color: white;
+	text-align: center;
+	border-radius: 8px;
+	visibility: hidden;
+}
+
+.validation {
+	margin-top: 5px;
+	font-size: 13px;
+	display: none;
+}
+
+.form-submit {
+	width: 400px;
+	height: 45px;
+	color: white;
+	outline: none;
+	border: none;
+	margin-top: 30px;
+	border-radius: 5px;
+	background-color: hsla(230, 61%, 58%, 1);
+}
+
+.form-submit:hover {
+	background-color: hsla(230, 61%, 58%, 0.8)
+}
+
+.input-checkbox {
+	width: 400px;
+	margin-top: 30px;
+}
+
+.input-checkbox label {
+	width: 90%;
+	font-size: 13px;
+	margin-left: 5px;
+	margin-top: 2px;
+	display: inline;
+	vertical-align: top;
+	color: hsla(226, 14%, 38%, 1);
+	display: inline-block !important;
+}
+
+.hint {
+	font-size: 13px;
+	display: block;
+	margin-top: 10px;
+	width: 400px;
+	text-align: center;
+	color: hsla(219, 10%, 70%, 1);
+}
+
+.hint a {
+	color: hsla(219, 10%, 50%, 1);
+}
+
+.hint a:hover {
+	text-decoration: none;
+	color: hsla(219, 10%, 50%, 1);
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.left-pane {
+		display: none;
+	}
+
+	.right-pane {
+		width: 100%;
+	}
+
+	.form-wrapper form {
+		width: 100%;
+		margin-left: 10%;
+	}
+
+	.form-wrapper {
+		margin-top: 50px;
+	}
+
+	.input-item input {
+		width: 80%;
+	}
+
+	.form-submit {
+		width: 80%;
+	}
+
+	.input-checkbox {
+		width: 80%;
+	}
+
+	.hint {
+		width: 80%;
+	}
+}
