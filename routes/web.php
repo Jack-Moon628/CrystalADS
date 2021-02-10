@@ -33,6 +33,7 @@ Route::middleware(['auth', 'app'])->group(function () {
 
 // Laravel Auth Routes
 Auth::routes();
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 // Application Components
 Route::middleware(['account.state', 'auth', 'app'])->group(function () {

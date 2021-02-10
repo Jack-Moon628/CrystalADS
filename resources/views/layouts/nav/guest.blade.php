@@ -17,6 +17,7 @@
 			@guest
 				<a href="/login">Sign in</a>
 			@else
+				<a href="{{ url('/logout') }}"> logout </a>
 				<a href="/home">Dashboard</a>
 			@endguest
 		</div>
