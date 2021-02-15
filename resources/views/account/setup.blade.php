@@ -10,7 +10,6 @@
 @section('content')
 
 @include('layouts.nav.auth')
-
 <div class="container-fluid">
 	<div class="row mt-5">
 		<div class="offset-md-3 col-md-6 bg-dark rounded-top pb-3 text-light">
@@ -24,13 +23,11 @@
 			@endif
 		</div>
 	</div>
-
 	<div class="row mb-5">
 		<div class="offset-md-3 col-md-6 bg-white rounded-bottom">
 			<form action="/account/setup/{{ Auth::user()->id }}" method="POST">
 				@csrf
 				@method('PUT')
-
 				<div class="row mt-3 mb-3">
 					<div class="col-md-12">
 						<div class="input-group">

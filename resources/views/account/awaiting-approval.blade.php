@@ -14,7 +14,6 @@
 				<div class="card-header border-0">
 					<span>Awaiting Account Approval</span>
 				</div>
-
 				<div class="card-body text-center border-0">
 					<span class="d-block mt-3 mb-3">Your account is waiting to be approved by an Administrator</span>
 					<a href="/dashboard" class="btn btn-primary mb-3">Refresh</a>

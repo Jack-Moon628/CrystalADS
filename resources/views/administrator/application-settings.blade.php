@@ -16,14 +16,11 @@
 				<div class="card-header bg-white border-bottom">
 					User Registration Settings
 				</div>
-
 				<div class="card-body">
                 	<span class="pt-3">
                 		User Approval Required
                 	</span>
-
                     @if($settings[0]->active)
-
                     	<div class="d-inline-block float-right mt-2">
 							<div class="onoffswitch" onclick="accountApprovalSettingModal()">
 							    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>

@@ -30,7 +30,6 @@
 		</div>
 	</div>
 </div>
-
 <div class="container bg-white rounded mb-4">
 		<div class="col-md-12">
 			<div id="logs" class="log-list pt-4">
@@ -39,9 +38,7 @@
 						Logs
 					</span>
 				</div>
-
 				<hr>
-
 				@foreach($logs as $log)
 
 					<div class="log-row ripple" onclick="viewLog({{ $log->id }})">
@@ -53,7 +50,6 @@
 							</span>
 						</span>
 					</div>
-
 				@endforeach
 			</div>
 
